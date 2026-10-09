@@ -1,0 +1,53 @@
+Task 5: Decision Trees and Random Forests
+---------------------------------------------
+Decision Tree test accuracy: 0.9123
+Random Forest test accuracy: 0.9474
+Decision Tree 5-fold CV mean accuracy: 0.9280
+Random Forest 5-fold CV mean accuracy: 0.9631
+
+Decision Tree Classification Report
+              precision    recall  f1-score   support
+
+   malignant       0.85      0.93      0.89        42
+      benign       0.96      0.90      0.93        72
+
+    accuracy                           0.91       114
+   macro avg       0.90      0.92      0.91       114
+weighted avg       0.92      0.91      0.91       114
+
+Random Forest Classification Report
+              precision    recall  f1-score   support
+
+   malignant       0.93      0.93      0.93        42
+      benign       0.96      0.96      0.96        72
+
+    accuracy                           0.95       114
+   macro avg       0.94      0.94      0.94       114
+weighted avg       0.95      0.95      0.95       114
+
+Random Forest Confusion Matrix
+[[39  3]
+ [ 3 69]]
+
+Top 10 Important Features
+worst perimeter: 0.1433
+worst area: 0.1308
+worst concave points: 0.1062
+mean concave points: 0.0963
+worst radius: 0.0820
+mean concavity: 0.0529
+mean perimeter: 0.0481
+mean radius: 0.0460
+mean area: 0.0429
+worst concavity: 0.0428
+
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.
